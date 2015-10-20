@@ -10,7 +10,7 @@ class SamplParty
   end
 
   def after(options={})
-    SampleParty.post("/after", :body => options)
+    SamplParty.post("/after", :body => options)
   end
 
   def beat

@@ -9,6 +9,14 @@ class SamplParty
     SamplParty.post("/better", :body => options)
   end
 
+  def after(options={})
+    SampleParty.post("/after", :body => options)
+  end
+
+  def beat
+    SamplParty.post("/beat")
+  end
+
   def stop
     SamplParty.get("/stop")
   end
